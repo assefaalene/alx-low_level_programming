@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints numbers(0 to 9) except 2 & 4
- * Return:0
+ * print_most_numbers - prints numbers
+ * Return: 0
  */
+
 void print_most_numbers(void)
 {
-	char n = 9;
+	char n = 0;
 
 	while (n <= 9)
 	{
