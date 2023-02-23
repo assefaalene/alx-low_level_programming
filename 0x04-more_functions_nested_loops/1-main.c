@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-    int c;
+    char c;
 
     c = '0';
     printf("%c: %d\n", c, _isdigit(c));
