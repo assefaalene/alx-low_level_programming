@@ -2,7 +2,6 @@
 
 /**
  * print_square - prints a square
- * @n: number to be printed
  * @size: size of a square
  * Return: Void
  */
@@ -13,7 +12,7 @@ void print_square(int size)
 
 	j = 0;
 
-	if (size <= 0)
+	if (size < 0)
 		_putchar('\n');
 	while (j < size)
 	{
