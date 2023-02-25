@@ -2,25 +2,28 @@
 
 /**
  * print_square - prints a square
- * #n: number to be printed
- * Return: 0
+ * @n: number to be printed
+ * @size: size of a square
+ * Return: Void
  */
 
 void print_square(int size)
 {
-	int i = 0, ii;
+	int i, j;
 
-	while (i < n && n > 0)
+	j = 0;
+
+	if (size <= 0)
+		_putchar('\n');
+	while (j < size)
 	{
-		ii = 0;
-		while (ii < n)
+		i = 0;
+		while (i < size)
 		{
 			_putchar('#');
-			ii++;
+			i++;
 		}
 		_putchar('\n');
-		i++;
+		j++;
 	}
-	if (i == 0)
-		_putchar('\n);
 }
