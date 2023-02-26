@@ -1,25 +1,37 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _putchar - prints the number from 0 to 100
- * @c: number to be printed
+ * main - prints a Fizz Buzz program
  * Return: 0
  */
-
-int _putchar(char c)
+int main(void)
 {
-	char c;
+	int n;
 
-	for (c = 1; c <= 100; i++)
+	for (n = 1; n <= 100; n++)
 	{
-		if (c % 15 == 0)
-			_putchar("FizzBuzz\t");
-		else if ((c % 3) == 0)
-			_putchar("Fizz\t");
-		else if ((c % 5) == 0)
-			_putchar("Buzz\t");
+		if ((n % 3 == 0) && (n % 5 == 0))
+		{
+			printf("FizzBuzz");
+		}
+		else if (n % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (n % 5 == 0)
+		{
+			printf("Buzz");
+		}
 		else
-			_putchar("%d\t", c);
+		{
+			printf("%d", n);
+		}
+		if (n != 100)
+		{
+			printf(" ");
+		}
 	}
+	printf("\n");
 	return (0);
 }
