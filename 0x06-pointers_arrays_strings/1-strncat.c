@@ -20,7 +20,6 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			dest[x] = src[y];
 			x++;
-			y++;
 		}
 	if (y < n)
 	{
