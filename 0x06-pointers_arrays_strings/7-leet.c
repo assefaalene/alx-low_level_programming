@@ -3,10 +3,10 @@
 /**
  * leet - a function that encodes a string into 1337
  * @n: input value
- * Return: n value
+ * Return: returns a string into 1337
  */
 
-char *leet(char *)
+char *leet(char *n)
 {
 	int i, j;
 	char s1[] = "aAeEoOtTlL";
