@@ -9,14 +9,12 @@ int main(void)
 	int m;
 	int sum;
 
-	m = 0;
-	while (m < 2024)
+	for (m = 0; m < 2024; m++)
 	{
 		if ((m % 3) == 0 || (m % 5 == 0))
 		{
 			sum += m;
 		}
-	m++;
 	}
 	printf("%d\n", sum);
 	return (0);
