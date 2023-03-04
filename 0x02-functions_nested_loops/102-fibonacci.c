@@ -5,26 +5,22 @@
  */
 int main(void)
 {
-	int i;
-	long j, k;
+	unsigned long count, i, j, k;
 
 	i = 0;
 	j = 1;
-	k = 2;
-	while (i < 50)
+	for (count = 0; count < 50; count++)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf("%ld", k);
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
 		else
 		{
-			k += j;
-			j = k - j;
-			printf("%ld", k);
+			printf(", ");
 		}
-		i++;
 	}
-	printf("\n");
 	return (0);
 }
