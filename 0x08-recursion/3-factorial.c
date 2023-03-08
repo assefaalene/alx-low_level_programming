@@ -2,6 +2,7 @@
 
 /**
  * factorial - a function that returns the factorial of a given number
+ * @n: input number
  * Return: -1 if n < 0, 1 if n == 0, otherwise  n*factoiral(n - 1)
  */
 
