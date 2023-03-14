@@ -6,5 +6,5 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	return strcat(dest, src, n);
+	return strncat(dest, src, n);
 }
